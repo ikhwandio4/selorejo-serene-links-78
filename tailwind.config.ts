@@ -47,6 +47,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        nature: {
+          forest: "hsl(var(--forest-green))",
+          "forest-light": "hsl(var(--forest-green-light))",
+          earth: "hsl(var(--earth-brown))",
+          "earth-dark": "hsl(var(--earth-brown-dark))",
+          cream: "hsl(var(--nature-cream))",
+          lake: "hsl(var(--lake-blue))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +70,18 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        "gradient-nature": "var(--gradient-nature)",
+        "gradient-earth": "var(--gradient-earth)",
+        "gradient-overlay": "var(--gradient-overlay)",
+      },
+      boxShadow: {
+        nature: "var(--shadow-nature)",
+        soft: "var(--shadow-soft)",
+      },
+      transitionTimingFunction: {
+        smooth: "var(--transition-smooth)",
       },
       keyframes: {
         "accordion-down": {
@@ -80,10 +100,21 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          from: {
+            opacity: "0",
+            transform: "translateY(20px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.6s ease-out",
       },
     },
   },

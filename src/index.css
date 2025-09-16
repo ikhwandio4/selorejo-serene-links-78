@@ -8,35 +8,55 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 32 8% 95%;
+    --foreground: 145 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 145 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 145 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 145 45% 18%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 32 12% 88%;
+    --secondary-foreground: 145 20% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 32 8% 92%;
+    --muted-foreground: 145 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 28 35% 75%;
+    --accent-foreground: 145 20% 15%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 32 12% 85%;
+    --input: 32 12% 85%;
+    --ring: 145 45% 18%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
+
+    /* Nature resort design tokens */
+    --forest-green: 145 45% 18%;
+    --forest-green-light: 145 35% 35%;
+    --earth-brown: 28 35% 75%;
+    --earth-brown-dark: 28 25% 55%;
+    --nature-cream: 32 15% 95%;
+    --lake-blue: 200 45% 35%;
+    
+    /* Gradients */
+    --gradient-nature: linear-gradient(135deg, hsl(var(--forest-green)), hsl(var(--lake-blue)));
+    --gradient-earth: linear-gradient(180deg, hsl(var(--earth-brown)), hsl(var(--earth-brown-dark)));
+    --gradient-overlay: linear-gradient(180deg, rgba(0,0,0,0.4), rgba(0,0,0,0.6));
+    
+    /* Shadows */
+    --shadow-nature: 0 10px 30px -10px hsl(var(--forest-green) / 0.3);
+    --shadow-soft: 0 4px 20px -4px hsl(145 20% 15% / 0.1);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
@@ -56,33 +76,41 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 145 15% 8%;
+    --foreground: 32 8% 95%;
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 145 15% 12%;
+    --card-foreground: 32 8% 95%;
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 145 15% 12%;
+    --popover-foreground: 32 8% 95%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 145 35% 35%;
+    --primary-foreground: 32 8% 95%;
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 145 10% 18%;
+    --secondary-foreground: 32 8% 95%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 145 10% 15%;
+    --muted-foreground: 32 5% 65%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 28 25% 55%;
+    --accent-foreground: 32 8% 95%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 32 8% 95%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 145 10% 18%;
+    --input: 145 10% 18%;
+    --ring: 145 35% 35%;
+    
+    /* Dark mode nature tokens */
+    --forest-green: 145 35% 35%;
+    --forest-green-light: 145 25% 45%;
+    --earth-brown: 28 25% 55%;
+    --earth-brown-dark: 28 15% 35%;
+    --nature-cream: 145 8% 18%;
+    --lake-blue: 200 35% 45%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
