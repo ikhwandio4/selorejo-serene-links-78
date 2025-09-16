@@ -1,4 +1,5 @@
-import { Calendar, Camera, Gift } from "lucide-react";
+import { Calendar, Camera, Gift, Youtube, MessageCircle } from "lucide-react";
+import { FaTiktok } from "react-icons/fa";
 import { LinkButton } from "@/components/LinkButton";
 import backgroundImage from "@/assets/selorejo-lake-bg.jpg";
 
@@ -47,6 +48,33 @@ const Index = () => {
             title="Photo Gallery"
             variant="glass"
           />
+        </div>
+
+        {/* Social Media Icons */}
+        <div className="mt-8 flex justify-center space-x-6">
+          <button
+            onClick={() => window.open('https://youtube.com/@hotelselorejo', '_blank')}
+            className="p-3 bg-white/20 text-white border border-white/30 backdrop-blur-sm hover:bg-white/30 rounded-full transition-smooth hover:scale-110 shadow-soft"
+            aria-label="YouTube"
+          >
+            <Youtube className="w-6 h-6" />
+          </button>
+          
+          <button
+            onClick={() => window.open('https://tiktok.com/@hotelselorejo', '_blank')}
+            className="p-3 bg-white/20 text-white border border-white/30 backdrop-blur-sm hover:bg-white/30 rounded-full transition-smooth hover:scale-110 shadow-soft"
+            aria-label="TikTok"
+          >
+            <FaTiktok className="w-6 h-6" />
+          </button>
+          
+          <button
+            onClick={() => window.open('https://wa.me/628123456789', '_blank')}
+            className="p-3 bg-white/20 text-white border border-white/30 backdrop-blur-sm hover:bg-white/30 rounded-full transition-smooth hover:scale-110 shadow-soft"
+            aria-label="WhatsApp Admin"
+          >
+            <MessageCircle className="w-6 h-6" />
+          </button>
         </div>
 
         {/* Footer */}
